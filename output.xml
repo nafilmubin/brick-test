@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on darwin)" generated="20231121 11:20:02.993" rpa="false" schemaversion="4">
+<suite id="s1" name="Register" source="/Users/nafilulmubin/Documents/Work/brick-test/register.robot">
+<test id="s1-t1" name="Failed Register due to email already taken" line="56">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231121 11:20:03.162" level="INFO">Opening browser 'chrome' to base url 'https://qademo.onebrick.io/'.</msg>
+<status status="PASS" starttime="20231121 11:20:03.162" endtime="20231121 11:20:05.264"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=firstName</arg>
+<arg>aaaaa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.266" level="INFO">Typing text 'aaaaa' into text field 'id=firstName'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.265" endtime="20231121 11:20:05.373"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=lastName</arg>
+<arg>Jony</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.373" level="INFO">Typing text 'Jony' into text field 'id=lastName'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.373" endtime="20231121 11:20:05.430"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>aaaaa@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.431" level="INFO">Typing text 'aaaaa@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.430" endtime="20231121 11:20:05.477"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=phoneNumber</arg>
+<arg>82222627612</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.477" level="INFO">Typing text '82222627612' into text field 'id=phoneNumber'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.477" endtime="20231121 11:20:05.579"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>123123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.579" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20231121 11:20:05.595" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231121 11:20:05.620" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231121 11:20:05.579" endtime="20231121 11:20:05.620"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=confirm_password</arg>
+<arg>123123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.620" level="INFO">Typing password into text field 'id=confirm_password'.</msg>
+<msg timestamp="20231121 11:20:05.636" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231121 11:20:05.655" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231121 11:20:05.620" endtime="20231121 11:20:05.655"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231121 11:20:05.655" level="INFO">Clicking button 'name=register'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.655" endtime="20231121 11:20:05.829"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>id=swal2-title</arg>
+<arg>Error</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231121 11:20:05.830" level="INFO">Verifying element 'id=swal2-title' contains exact text 'Error'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.830" endtime="20231121 11:20:05.845"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>id=swal2-content</arg>
+<arg>Email has been taken!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231121 11:20:05.846" level="INFO">Verifying element 'id=swal2-content' contains exact text 'Email has been taken!'.</msg>
+<status status="PASS" starttime="20231121 11:20:05.846" endtime="20231121 11:20:05.856"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231121 11:20:05.857" endtime="20231121 11:20:05.988"/>
+</kw>
+<status status="PASS" starttime="20231121 11:20:03.161" endtime="20231121 11:20:05.988"/>
+</test>
+<status status="PASS" starttime="20231121 11:20:02.997" endtime="20231121 11:20:05.989"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
